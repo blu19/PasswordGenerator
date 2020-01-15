@@ -8,14 +8,16 @@ var specChar = array('!','@','#','$','?','+');
 alert("Hello! Let's make a password!");
 
 //confirm statements to determine user choice for each
-var passLength = prompt("How many characters do you want your password to be? (Min 8 and max 128)");
+var  = prompt();
 
-//convert response to integer
-int.result = Integer.parseInt(passLength);
-
+function input() {
+    var passLength = Number(prompt("How many characters do you want your password to be? (Min 8 and max 128)"));
+    if (isNaN(passLength)); //Check what number it is
+    alert("Not Valid. Try again.");
+    return input();
+    }
+ 
 //compare converted response to 8 and 128, if < 8 or > 128, then alert user it's not valid and must be >= 8 or <= 128 
-if (passLength < 8 || passLength > 128) {
-     var passLength = parseInt(prompt("Password must be min 8 characters or max 128. How many characters would you like?"));
 
 } else (alert("Lowercase letters will be automatically included."));
 
